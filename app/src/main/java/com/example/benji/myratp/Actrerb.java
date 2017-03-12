@@ -12,10 +12,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.android.volley.*;
+import org.json.*;
 
 public class Actrerb extends AppCompatActivity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,8 +40,48 @@ public class Actrerb extends AppCompatActivity
                 new Response.Listener<String>() { @Override
                 public void onResponse(String response) {
                         // Display the first 500 characters of the response string.
-                        rerbtxt.setText("Response is: "+ response.substring(0,500));
-                        //rerbtxt.setText("Response is: hello");
+                    try {
+
+
+                        /*JSONObject jsonObj = new JSONObject(response);
+                        JSONObject res = jsonObj.getJSONObject("result");
+                        JSONArray sch = res.getJSONArray("schedules");
+                        rerbtxt.setText("Prochain passage : "+ sch.getString(1));*/
+
+                        JSONObject jsonObj = new JSONObject(response);
+                        JSONObject res = jsonObj.getJSONObject("result");
+                        JSONArray sch = res.getJSONArray("schedules");
+                        String info = sch.getString(1);
+
+                        String[] parts = info.split(",");
+                        int i = 0;
+                        while (parts[i] != null) {
+                            if(parts[i].toLowerCase().contains("message".toLowerCase())) {
+                                rerbtxt.setText(parts[i].substring(11, (parts[i].length()-1)));
+                                break;
+                            }
+                            i++;
+                        }
+
+                        /*int i = 0;
+                        JSONObject jsonObj = new JSONObject(response);
+                        JSONArray heures = jsonObj.getJSONArray("result");
+                        JSONArray hor = jsonObj.getJSONArray("schedules");
+                        JSONObject c = heures.getJSONObject(i);
+                        String heure = c.getString("schedules");
+                        rerbtxt.setText("Prochain passage : "+ heure);*/
+
+                        /*JSONObject sys  = reader.getJSONObject("sys");
+                        erbtxt = sys.getString("result");*/
+
+                        /*JSONArray arr = new JSONArray(response);
+                        JSONObject jObj = arr.getJSONObject(0);
+                        String heure = jObj.getString("result");
+                        rerbtxt.setText("Prochain passage : "+ heure);*/
+                    }
+                    catch(JSONException e) {
+                        System.out.print("No work");
+                    }
                     }
                 }, new Response.ErrorListener() { @Override
         public void onErrorResponse(VolleyError error) {

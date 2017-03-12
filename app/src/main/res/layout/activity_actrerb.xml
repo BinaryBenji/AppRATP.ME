@@ -22,11 +22,28 @@
         android:layout_alignParentStart="true" />
 
     <TextView
+        android:text="Prochain train a : "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/nextrain"
+        android:textSize="36sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/nextrain"
+        android:layout_alignStart="@+id/nextrain"
         android:id="@+id/rerbtxt"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/nextrain"
+        android:layout_alignEnd="@+id/nextrain"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
 </RelativeLayout>
