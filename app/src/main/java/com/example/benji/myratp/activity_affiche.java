@@ -30,6 +30,18 @@ public class activity_affiche extends AppCompatActivity{
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_affiche);
+
+        Button next = (Button) findViewById(R.id.retour);
+        next.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View view)
+            {
+                Intent intent = new Intent();
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
+
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, requ,
                 new Response.Listener<String>() { @Override
@@ -65,13 +77,5 @@ public class activity_affiche extends AppCompatActivity{
 
         });
         queue.add(stringRequest);
-
-
-
-        /*System.out.println("Sec : " + requ);
-        TextView thetime = (TextView) findViewById(R.id.txtTime);
-        thetime.setText(requ.toString());*/
-
-
     }
 }

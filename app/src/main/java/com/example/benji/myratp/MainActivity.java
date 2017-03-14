@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
         //activity_affiche.Creat_activity_affiche(req);
         setContentView(R.layout.activity_main);
 
-        Button next = (Button) findViewById(R.id.buttonrerb);
+        /*Button next = (Button) findViewById(R.id.buttonrerb);
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), Actrerb.class);
                 startActivityForResult(myIntent, 0);
             }
-        });
+        });*/
 
         // Button RER
 

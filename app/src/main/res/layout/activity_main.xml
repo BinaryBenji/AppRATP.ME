@@ -11,37 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.benji.myratp.MainActivity">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/rerb"
-        android:id="@+id/imageView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Robinson"
-        android:textStyle="bold"
-        android:id="@+id/textView2"
-        android:textSize="20sp"
-        android:layout_marginTop="26dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/imageView2" />
-
-    <Button
-        android:text="Check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="12dp"
-        android:id="@+id/buttonrerb"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <TextView
         android:text="Transport"
         android:layout_width="wrap_content"
@@ -53,41 +22,10 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ToggleButton
-        android:text="RER"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:id="@+id/toggleButtonRER"
-        android:layout_below="@+id/textView3"
-        android:layout_toRightOf="@+id/imageView2"
-        android:layout_toEndOf="@+id/imageView2"
-        android:textOff="RER"
-        android:textOn="RER" />
-
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/toggleButtonRER"
-        android:layout_toRightOf="@+id/toggleButtonRER"
-        android:layout_toEndOf="@+id/toggleButtonRER"
-        android:id="@+id/toggleButtonMETRO"
-        android:textOff="METRO"
-        android:textOn="METRO" />
-
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/toggleButtonMETRO"
-        android:layout_toRightOf="@+id/toggleButtonMETRO"
-        android:layout_toEndOf="@+id/toggleButtonMETRO"
-        android:id="@+id/toggleButtonBUS"
-        android:textOff="BUS"
-        android:textOn="BUS" />
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark" />
 
     <TextView
         android:text="Numéro"
@@ -100,7 +38,10 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -121,7 +62,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -145,30 +89,10 @@
         android:text="Sens"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:gravity="center_horizontal" />
-
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/toggleButtonRetour"
-        android:layout_below="@+id/textView6"
-        android:layout_toLeftOf="@+id/buttonrerb"
-        android:layout_toStartOf="@+id/buttonrerb"
-        android:layout_marginTop="13dp"
-        android:textOff="RETOUR"
-        android:textOn="RETOUR" />
-
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/toggleButtonAller"
-        android:layout_alignBottom="@+id/toggleButtonRetour"
-        android:layout_toLeftOf="@+id/toggleButtonRetour"
-        android:textOff="ALLER"
-        android:textOn="ALLER"
-        android:layout_alignTop="@+id/toggleButtonRetour" />
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:text="CHECK"
@@ -181,5 +105,68 @@
         android:layout_marginTop="16dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonAller"
+        android:textOff="ALLER"
+        android:textOn="ALLER"
+        android:layout_above="@+id/buttonChck"
+        android:layout_alignLeft="@+id/txtStat"
+        android:layout_alignStart="@+id/txtStat"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonRetour"
+        android:layout_marginTop="28dp"
+        android:textOff="RETOUR"
+        android:textOn="RETOUR"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/toggleButtonAller"
+        android:layout_toEndOf="@+id/toggleButtonAller" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonMETRO"
+        android:textOff="METRO"
+        android:textOn="METRO"
+        android:layout_alignBaseline="@+id/toggleButtonRER"
+        android:layout_alignBottom="@+id/toggleButtonRER"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:text="RER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/toggleButtonRER"
+        android:textOff="RER"
+        android:textOn="RER"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/toggleButtonMETRO"
+        android:layout_toStartOf="@+id/toggleButtonMETRO"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonBUS"
+        android:textOff="BUS"
+        android:textOn="BUS"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/toggleButtonMETRO"
+        android:layout_toEndOf="@+id/toggleButtonMETRO"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
 
 </RelativeLayout>
