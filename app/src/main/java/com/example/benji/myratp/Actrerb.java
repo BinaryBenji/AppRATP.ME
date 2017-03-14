@@ -41,13 +41,6 @@ public class Actrerb extends AppCompatActivity
                 public void onResponse(String response) {
                         // Display the first 500 characters of the response string.
                     try {
-
-
-                        /*JSONObject jsonObj = new JSONObject(response);
-                        JSONObject res = jsonObj.getJSONObject("result");
-                        JSONArray sch = res.getJSONArray("schedules");
-                        rerbtxt.setText("Prochain passage : "+ sch.getString(1));*/
-
                         JSONObject jsonObj = new JSONObject(response);
                         JSONObject res = jsonObj.getJSONObject("result");
                         JSONArray sch = res.getJSONArray("schedules");
@@ -62,22 +55,6 @@ public class Actrerb extends AppCompatActivity
                             }
                             i++;
                         }
-
-                        /*int i = 0;
-                        JSONObject jsonObj = new JSONObject(response);
-                        JSONArray heures = jsonObj.getJSONArray("result");
-                        JSONArray hor = jsonObj.getJSONArray("schedules");
-                        JSONObject c = heures.getJSONObject(i);
-                        String heure = c.getString("schedules");
-                        rerbtxt.setText("Prochain passage : "+ heure);*/
-
-                        /*JSONObject sys  = reader.getJSONObject("sys");
-                        erbtxt = sys.getString("result");*/
-
-                        /*JSONArray arr = new JSONArray(response);
-                        JSONObject jObj = arr.getJSONObject(0);
-                        String heure = jObj.getString("result");
-                        rerbtxt.setText("Prochain passage : "+ heure);*/
                     }
                     catch(JSONException e) {
                         System.out.print("No work");
