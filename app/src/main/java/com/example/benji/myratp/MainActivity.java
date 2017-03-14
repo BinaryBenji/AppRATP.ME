@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,9 +14,11 @@ public class MainActivity extends AppCompatActivity {
     public String station;
     public String sens;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         Button next = (Button) findViewById(R.id.buttonrerb);
@@ -76,7 +79,15 @@ public class MainActivity extends AppCompatActivity {
         affi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
+                // NUM
 
+                EditText editnum  = (EditText)findViewById(R.id.txtNum);
+                numero =  editnum.getText().toString();
+
+                // STATION
+
+                EditText editstat  = (EditText)findViewById(R.id.txtStat);
+                station =  editstat.getText().toString();
 
                 Intent myIntent = new Intent(view.getContext(), activity_affiche.class);
                 startActivityForResult(myIntent, 0);
