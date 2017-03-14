@@ -13,10 +13,12 @@ public class MainActivity extends AppCompatActivity {
     public String numero;
     public String station;
     public String sens;
-
+    public String req;
+    activity_affiche activity_affiche = new activity_affiche();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
@@ -89,9 +91,15 @@ public class MainActivity extends AppCompatActivity {
                 EditText editstat  = (EditText)findViewById(R.id.txtStat);
                 station =  editstat.getText().toString();
 
+                // REQ
+
+                req = "https://api-ratp.pierre-grimaud.fr/v3/schedules/" +  transport + "/" + numero + "/" + station + "/" + sens;
+
                 Intent myIntent = new Intent(view.getContext(), activity_affiche.class);
                 startActivityForResult(myIntent, 0);
             }
+
         });
+        activity_affiche.Creat_activity_affiche(req);
     }
 }

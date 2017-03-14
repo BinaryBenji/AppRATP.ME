@@ -164,11 +164,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/toggleButtonAller"
-        android:layout_alignBaseline="@+id/toggleButtonRetour"
         android:layout_alignBottom="@+id/toggleButtonRetour"
         android:layout_toLeftOf="@+id/toggleButtonRetour"
         android:textOff="ALLER"
-        android:textOn="ALLER" />
+        android:textOn="ALLER"
+        android:layout_alignTop="@+id/toggleButtonRetour" />
 
     <Button
         android:text="CHECK"
