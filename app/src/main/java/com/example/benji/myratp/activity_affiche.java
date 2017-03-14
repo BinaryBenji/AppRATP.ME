@@ -24,7 +24,7 @@ public class activity_affiche extends AppCompatActivity{
     //MainActivity main;
 
     public String requ = MainActivity.req;
-    public String transp = MainActivity.transport;
+    public String dep = MainActivity.station;
 
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,7 +40,9 @@ public class activity_affiche extends AppCompatActivity{
                         JSONArray sch = res.getJSONArray("schedules");
                         String info = sch.getString(1);
                         TextView ttxt = (TextView) findViewById(R.id.txtTime);
+                        TextView trdep = (TextView) findViewById(R.id.txtDepart);
 
+                        trdep.setText(dep);
                         String[] parts = info.split(",");
                         int i = 0;
                         while (parts[i] != null) {
