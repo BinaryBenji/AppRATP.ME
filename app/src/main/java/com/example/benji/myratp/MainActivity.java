@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                             JSONObject jsonObj = new JSONObject(response);
                             JSONObject res = jsonObj.getJSONObject("result");
                             JSONArray sch = res.getJSONArray("schedules");
-                            String info = sch.getString(1);
+                            String info = sch.getString(0);
                             TextView rob1 = (TextView) findViewById(R.id.rob1);
                             String[] parts = info.split(",");
                             int i = 0;
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                             JSONObject jsonObj = new JSONObject(response);
                             JSONObject res = jsonObj.getJSONObject("result");
                             JSONArray sch = res.getJSONArray("schedules");
-                            String info = sch.getString(1);
+                            String info = sch.getString(0);
                             TextView cit1 = (TextView) findViewById(R.id.cit1);
                             String[] parts = info.split(",");
                             int i = 0;
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                             JSONObject jsonObj = new JSONObject(response);
                             JSONObject res = jsonObj.getJSONObject("result");
                             JSONArray sch = res.getJSONArray("schedules");
-                            String info = sch.getString(1);
+                            String info = sch.getString(0);
                             TextView cit2 = (TextView) findViewById(R.id.cit2);
                             String[] parts = info.split(",");
                             int i = 0;
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                             JSONObject jsonObj = new JSONObject(response);
                             JSONObject res = jsonObj.getJSONObject("result");
                             JSONArray sch = res.getJSONArray("schedules");
-                            String info = sch.getString(1);
+                            String info = sch.getString(0);
                             TextView por1 = (TextView) findViewById(R.id.por1);
                             String[] parts = info.split(",");
                             int i = 0;
@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
                             JSONObject jsonObj = new JSONObject(response);
                             JSONObject res = jsonObj.getJSONObject("result");
                             JSONArray sch = res.getJSONArray("schedules");
-                            String info = sch.getString(1);
+                            String info = sch.getString(0);
                             TextView por2 = (TextView) findViewById(R.id.por2);
                             String[] parts = info.split(",");
                             int i = 0;
@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
                             JSONObject jsonObj = new JSONObject(response);
                             JSONObject res = jsonObj.getJSONObject("result");
                             JSONArray sch = res.getJSONArray("schedules");
-                            String info = sch.getString(1);
+                            String info = sch.getString(0);
                             TextView pie1 = (TextView) findViewById(R.id.pie1);
                             String[] parts = info.split(",");
                             int i = 0;
