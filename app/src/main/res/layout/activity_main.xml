@@ -12,161 +12,169 @@
     tools:context="com.example.benji.myratp.MainActivity">
 
     <TextView
-        android:text="Transport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/buttonrerb"
-        android:gravity="center_horizontal"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:textColor="@color/colorPrimaryDark" />
+        android:id="@+id/textView12"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="103dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="  Porte d'Italie : "
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
 
     <TextView
-        android:text="Numéro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/toggleButtonMETRO"
-        android:gravity="center_horizontal"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textStyle="normal|bold"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimaryDark" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/txtNum" />
+        android:id="@+id/textView10"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="  Cité Universitaire : "
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
 
     <TextView
-        android:text="Station"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtNum"
+        android:id="@+id/textView9"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="  Porte d'Italie : "
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="  Cité Universitaire : "
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/rerb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/m7"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/t3a"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
         android:id="@+id/textView5"
-        android:gravity="center_horizontal"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textStyle="normal|bold"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimaryDark" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/textView5"
-        android:layout_alignRight="@+id/txtNum"
-        android:layout_alignEnd="@+id/txtNum"
-        android:layout_marginTop="11dp"
-        android:id="@+id/txtStat" />
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="  Robinson : "
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtStat"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_marginTop="11dp"
         android:id="@+id/textView6"
-        android:text="Sens"
-        android:layout_alignParentRight="true"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView12"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="  Pierre et Marie Curie : "
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <TextView
+        android:id="@+id/rob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView8"
         android:layout_alignParentEnd="true"
-        android:gravity="center_horizontal"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:textColor="@color/colorPrimaryDark" />
-
-    <Button
-        android:text="CHECK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonChck"
-        android:layout_below="@+id/toggleButtonRetour"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:text=":)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <ToggleButton
-        android:text="ToggleButton"
+    <TextView
+        android:id="@+id/cit1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toggleButtonAller"
-        android:textOff="ALLER"
-        android:textOn="ALLER"
-        android:layout_above="@+id/buttonChck"
-        android:layout_alignLeft="@+id/txtStat"
-        android:layout_alignStart="@+id/txtStat"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp" />
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/textView8"
+        android:text=":O"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <ToggleButton
-        android:text="ToggleButton"
+    <TextView
+        android:id="@+id/cit2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toggleButtonRetour"
-        android:layout_marginTop="28dp"
-        android:textOff="RETOUR"
-        android:textOn="RETOUR"
-        android:layout_below="@+id/textView6"
-        android:layout_toRightOf="@+id/toggleButtonAller"
-        android:layout_toEndOf="@+id/toggleButtonAller" />
+        android:layout_above="@+id/textView12"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_toRightOf="@+id/textView10"
+        android:text=":3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <ToggleButton
-        android:text="ToggleButton"
+    <TextView
+        android:id="@+id/por1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toggleButtonMETRO"
-        android:textOff="METRO"
-        android:textOn="METRO"
-        android:layout_alignBaseline="@+id/toggleButtonRER"
-        android:layout_alignBottom="@+id/toggleButtonRER"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_toRightOf="@+id/textView10"
+        android:text=":D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <ToggleButton
-        android:text="RER"
+    <TextView
+        android:id="@+id/por2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/toggleButtonRER"
-        android:textOff="RER"
-        android:textOn="RER"
-        android:layout_below="@+id/textView3"
-        android:layout_toLeftOf="@+id/toggleButtonMETRO"
-        android:layout_toStartOf="@+id/toggleButtonMETRO"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp" />
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:text=":X"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <ToggleButton
-        android:text="ToggleButton"
+    <TextView
+        android:id="@+id/pie1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toggleButtonBUS"
-        android:textOff="BUS"
-        android:textOn="BUS"
-        android:layout_above="@+id/textView4"
-        android:layout_toRightOf="@+id/toggleButtonMETRO"
-        android:layout_toEndOf="@+id/toggleButtonMETRO"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp" />
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:text=":P"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
 </RelativeLayout>
