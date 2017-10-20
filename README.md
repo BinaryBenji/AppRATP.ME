@@ -1,6 +1,6 @@
 # MyRATP.ME
 
-<h2> METRO / BUS / RER -- Schedules :D </h2>
+<h2> METRO / BUS / RER Schedules </h2>
 
 <li> Android app from Scratch </li>
 <li> Still need to parse correctly for metros, and to add favorites </li>
